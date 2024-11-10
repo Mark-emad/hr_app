@@ -6,7 +6,7 @@ class StatisticsCards extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        StatisticCard('15', 'Resume\nReview', Colors.green),
+        StatisticCard('15', 'weekends\nReview', Colors.green),
         StatisticCard('8', 'Interviews', Colors.greenAccent),
         StatisticCard('2', 'Tests\nCheck', Colors.lightGreen),
       ],
