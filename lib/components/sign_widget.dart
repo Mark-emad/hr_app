@@ -9,13 +9,84 @@ class SignWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        height: 150,
-        width: 300,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(20),
-        ),
-        child: Row(
+          height: 150,
+          width: 300,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Column(
+            children: [
+              Align(
+                alignment: Alignment.centerRight,
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    right: 8,
+                    top: 2,
+                  ),
+                  child: Text(
+                    textAlign: TextAlign.right,
+                    "فرع شبرا مصر",
+                    style: TextStyle(
+                      fontFamily: "Cairo",
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  'تسجيل حضور',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontFamily: "Cairo",
+                    color: Colors.white,
+                  ),
+                ),
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(220, 60),
+                  backgroundColor: Colors.green[400],
+                ),
+              ),
+            ],
+          )),
+    );
+  }
+}
+
+// class GradientIcon extends StatelessWidget {
+//   final IconData icon;
+//   final double size;
+//   final Gradient gradient;
+
+//   const GradientIcon({
+//     required this.icon,
+//     required this.size,
+//     required this.gradient,
+//   });
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return ShaderMask(
+//       shaderCallback: (bounds) => gradient.createShader(
+//         Rect.fromLTWH(0, 0, bounds.width, bounds.height),
+//       ),
+//       child: Icon(
+//         icon,
+//         size: size,
+//         color: Colors.white, // Keep it white for gradient effect
+//       ),
+//     );
+//   }
+// }
+
+/*
+Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             // Sign In Icon and Label
@@ -78,38 +149,7 @@ class SignWidget extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class GradientIcon extends StatelessWidget {
-  final IconData icon;
-  final double size;
-  final Gradient gradient;
-
-  const GradientIcon({
-    required this.icon,
-    required this.size,
-    required this.gradient,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ShaderMask(
-      shaderCallback: (bounds) => gradient.createShader(
-        Rect.fromLTWH(0, 0, bounds.width, bounds.height),
-      ),
-      child: Icon(
-        icon,
-        size: size,
-        color: Colors.white, // Keep it white for gradient effect
-      ),
-    );
-  }
-}
-
-
+*/ 
 
 /*
 ElevatedButton(
