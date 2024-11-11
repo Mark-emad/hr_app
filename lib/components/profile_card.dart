@@ -13,7 +13,7 @@ class ProfileCard extends StatelessWidget {
       children: [
         CircleAvatar(
           foregroundImage: AssetImage('assets/images/ProfilePIC.jpg'),
-          radius: 36,
+          radius: 42,
         ),
         SizedBox(
           width: 20,
@@ -25,15 +25,17 @@ class ProfileCard extends StatelessWidget {
               width: 16,
             ),
             Text(
-              'Mark Emad',
+              'مارك عماد',
               style: TextStyle(
-                fontSize: 24,
+                fontFamily: "Cairo",
+                fontSize: 34,
               ),
             ),
             Text(
-              'HR Coordinator',
+              'مدير مالي',
               style: TextStyle(
-                fontSize: 16,
+                fontFamily: "Cairo",
+                fontSize: 22,
               ),
             )
           ],

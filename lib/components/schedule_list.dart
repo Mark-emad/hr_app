@@ -8,15 +8,21 @@ class ScheduleList extends StatelessWidget {
         Container(
           height: 70,
           decoration: BoxDecoration(
-            color: Color(0xfff7f7f7), 
+            color: Color(0xfff7f7f7),
             borderRadius: BorderRadius.circular(20),
           ),
           child: ListTile(
             leading: CircleAvatar(
               backgroundImage: NetworkImage("https://via.placeholder.com/50"),
             ),
-            title: Text('Clark Kent'),
-            subtitle: Text('Interview - 12:30 PM'),
+            title: Text(
+              'شيفت مسائي',
+              style: TextStyle(fontFamily: "Cairo"),
+            ),
+            subtitle: Text(
+              '6 - 12 PM',
+              style: TextStyle(fontFamily: "Cairo"),
+            ),
             trailing: Icon(Icons.arrow_forward_ios),
           ),
         ),
@@ -26,15 +32,21 @@ class ScheduleList extends StatelessWidget {
         Container(
           height: 70,
           decoration: BoxDecoration(
-            color: Color(0xfff7f7f7), 
-            borderRadius: BorderRadius.circular(20), 
+            color: Color(0xfff7f7f7),
+            borderRadius: BorderRadius.circular(20),
           ),
           child: ListTile(
             leading: CircleAvatar(
               backgroundImage: NetworkImage("https://via.placeholder.com/50"),
             ),
-            title: Text('How to be Happy'),
-            subtitle: Text('Training - 2:30 PM'),
+            title: Text(
+              'شيفت صباحي',
+              style: TextStyle(fontFamily: "Cairo"),
+            ),
+            subtitle: Text(
+              '9 - 3 PM',
+              style: TextStyle(fontFamily: "Cairo"),
+            ),
             trailing: Icon(Icons.arrow_forward_ios),
           ),
         ),

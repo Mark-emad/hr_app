@@ -27,7 +27,7 @@ class _HomeViewState extends State<HomeView> {
               children: [
                 // Gradient background
                 Container(
-                  height: 320,
+                  height: 280,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
@@ -64,8 +64,12 @@ class _HomeViewState extends State<HomeView> {
                       Padding(
                         padding: const EdgeInsets.only(bottom: 8),
                         child: Text(
-                          'Prism House',
-                          style: TextStyle(fontSize: 18),
+                          'مطعم مولانا',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontFamily: "Cairo",
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                       Spacer(),
@@ -81,10 +85,14 @@ class _HomeViewState extends State<HomeView> {
                   //   height: 10,
                   // ),
                   Text(
-                    'Today\'s Schedule',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    'جدولك اليوم',
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontFamily: "Cairo",
+                        fontWeight: FontWeight.bold),
                   ),
                   DatePicker(
+                    directionality: TextDirection.rtl,
                     DateTime.now(),
                     initialSelectedDate: DateTime.now(),
                     selectionColor: Colors.lightGreen,
@@ -102,9 +110,13 @@ class _HomeViewState extends State<HomeView> {
                   //   height: 10,
                   // ),
                   ScheduleList(),
-                  Text("Statistics",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  Text(
+                    "المتابعة",
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Cairo"),
+                  ),
                   StatisticsCards(),
                 ],
               ),

@@ -6,9 +6,9 @@ class StatisticsCards extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        StatisticCard('15', 'weekends\nReview', Colors.green),
-        StatisticCard('8', 'Interviews', Colors.greenAccent),
-        StatisticCard('2', 'Tests\nCheck', Colors.lightGreen),
+        StatisticCard('15', 'ايام\nالحضور', Colors.green),
+        StatisticCard('8', 'ايام\nالغياب', Colors.greenAccent),
+        StatisticCard('2', 'ايام\nالتأخير', Colors.lightGreen),
       ],
     );
   }
@@ -42,16 +42,23 @@ class StatisticCard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(count,
-                style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white)),
+            Text(
+              count,
+              style: TextStyle(
+                  fontFamily: "Cairo",
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
+            ),
             SizedBox(height: 1),
             Text(
               label,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 14, color: Colors.white),
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.white,
+                fontFamily: "Cairo",
+              ),
             ),
           ],
         ),
